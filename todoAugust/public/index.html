@@ -9,22 +9,22 @@
     html {
       overflow-y: scroll;
     }
-
     body {
       padding-top: 10%;
     }
-
     #myList {
       margin-bottom: 15%;
     }
   </style>
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js" charset="utf-8"></script>
   <title></title>
 </head>
 
 <body ng-controller="primaryController">
   <div class="container">
     <div class="jumbotron text-center">
-      <h1>i am <i>very</i> busy. <span class="label label-info">{{todos.length}}</span></h1>
+      <h1>i am <i>very</i> busy. <span class="label label-info">{{todos.length}} things to do</span></h1>
     </div>
     <div id="myList" class="row">
       <div class="col-sm-4 col-sm-offset-4">
@@ -51,8 +51,6 @@
 
 
 
-  <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js" charset="utf-8"></script>
   <script src="core.js" charset="utf-8"></script>
 </body>
 
