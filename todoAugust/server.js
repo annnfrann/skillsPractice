@@ -22,10 +22,6 @@ var Todo = mongoose.model('Todo', {
   text : String
 })
 
-// server info
-app.listen(8000)
-console.log("listening on port 8000");
-
 // routes
 
 // get all
@@ -72,3 +68,12 @@ app.delete('/api/todos/:todo_id', function(req, res){
     })
   })
 })
+
+// view route
+app.get('/api/', function(req, res){
+  res.render('./public/index.html')
+})
+
+// server info
+app.listen(8000)
+console.log("listening on port 8000");
